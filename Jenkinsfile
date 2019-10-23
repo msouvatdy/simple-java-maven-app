@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Install java') {
       steps {
-        sh '/home/jenkins/java.sh'
+        sh './home/java.sh'
       }
     }
   }
