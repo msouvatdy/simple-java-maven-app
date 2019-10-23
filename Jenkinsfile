@@ -13,7 +13,8 @@ pipeline {
     }
     stage('Install java') {
       steps {
-        sh './var/lib/jenkins/workspace/java.sh'
+        sh '''cd /var/lib/jenkins
+./java.sh'''
       }
     }
   }
