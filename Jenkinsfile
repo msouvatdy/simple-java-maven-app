@@ -17,5 +17,10 @@ pipeline {
 ./java.sh'''
       }
     }
+    stage('End') {
+      steps {
+        sh 'echo \'The application has been install\''
+      }
+    }
   }
 }
