@@ -17,9 +17,9 @@ pipeline {
 ./java.sh'''
       }
     }
-    stage('End') {
+    stage('Install maven') {
       steps {
-        sh 'echo \'The application has been install\''
+        sh 'echo \'root\' | sudo -S apt install maven -y'
       }
     }
   }
